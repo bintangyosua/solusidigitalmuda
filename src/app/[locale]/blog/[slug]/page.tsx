@@ -1,5 +1,3 @@
-"use server";
-
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx";
 import { formatDate, getPosts } from "@/app/utils";
@@ -9,7 +7,6 @@ import { baseURL, renderContent } from "@/app/resources";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { Suspense } from "react";
 
 interface BlogParams {
   params: {
@@ -18,7 +15,7 @@ interface BlogParams {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const locales = routing.locales;
 
   // Create an array to store all posts from all locales
@@ -38,9 +35,7 @@ export async function generateStaticParams() {
   return allPosts;
 }
 
-export async function generateMetadata({
-  params: { slug, locale },
-}: BlogParams) {
+export function generateMetadata({ params: { slug, locale } }: BlogParams) {
   let post = getPosts(["src", "app", "[locale]", "blog", "posts", locale]).find(
     (post) => post.slug === slug
   );
@@ -83,7 +78,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function Blog({ params }: BlogParams) {
+export default function Blog({ params }: BlogParams) {
   unstable_setRequestLocale(params.locale);
   let post = getPosts([
     "src",
@@ -140,9 +135,7 @@ export default async function Blog({ params }: BlogParams) {
         </Text>
       </Flex>
       <Flex as="article" direction="column" fillWidth>
-        <Suspense fallback={<div>Loading content...</div>}>
-          <CustomMDX source={post.content} />
-        </Suspense>
+        <CustomMDX source={post.content} />
       </Flex>
     </Flex>
   );
