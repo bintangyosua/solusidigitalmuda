@@ -329,7 +329,183 @@ const gallery = {
       alt: "image",
       orientation: "horizontal",
     },
-  ],
-};
+    technical: {
+        display: true,
+        title: 'Keahlian Kami',
+        skills: [
+            {
+                title: 'Teknologi Web',
+                description: <>Keahlian dalam framework pengembangan web modern termasuk React, Next.js, dan Node.js</>,
+                images: [
+                    {
+                        src: '/images/tech/HTML.svg',
+                        alt: 'Teknologi Web',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/tech/js.svg',
+                        alt: 'Teknologi Web',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/tech/ts.svg',
+                        alt: 'Teknologi Web',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/tech/node.svg',
+                        alt: 'Teknologi Web',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/tech/next.svg',
+                        alt: 'Teknologi Web',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/tech/react.svg',
+                        alt: 'Teknologi Web',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/tech/php.svg',
+                        alt: 'Teknologi Web',
+                        width: 5,
+                        height: 5
+                    }
+                ]
+            },
+            {
+                title: 'Database & Backend',
+                description: <>Pengalaman dalam mengelola berbagai jenis database dan pengembangan backend dengan performa tinggi</>,
+                images: [
+                    {
+                        src: '/images/tech/mysql.svg',
+                        alt: 'Database',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/tech/mongodb.svg',
+                        alt: 'Database',
+                        width: 5,
+                        height: 5
+                    },
+                    {
+                        src: '/images/tech/postgresql.svg',
+                        alt: 'Database',
+                        width: 5,
+                        height: 5
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+const blog = {
+    label: 'Blog',
+    title: 'Artikel & Blog',
+    description: 'Informasi terkini seputar teknologi dan transformasi digital'
+    // Create new blog posts by adding a new .mdx file to app/blog/posts
+    // All posts will be listed on the /blog route
+}
+
+const work = {
+    label: 'Proyek',
+    title: 'Proyek Kami',
+    description: `Design proyek yang telah dikerjakan oleh ${person.name}`
+    // Create new project pages by adding a new .mdx file to app/blog/posts
+    // All projects will be listed on the /home and /work routes
+}
+
+const gallery = {
+    label: 'Portofolio',
+    title: 'Showcase Projek',
+    description: 'Galeri visual dari implementasi sukses kami',
+    images: [
+        { 
+            src: '/images/projects/flower/flower (1).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/flower/flower (2).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/flower/flower (3).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (1).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (2).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (3).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (4).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (5).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/queasy/queasy (1).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/queasy/queasy (2).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/queasy/queasy (3).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/queasy/queasy (4).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/queasy/queasy (5).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/queasy/queasy (6).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/queasy/queasy (7).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+    ]
+}
 
 export { person, social, newsletter, home, about, blog, work, gallery };

@@ -1,43 +1,43 @@
 ---
-title: "Mengotomatisasi Penyerahan Desain dengan Pipeline Figma ke Kode"
-publishedAt: "2024-04-01"
-summary: "Mengeksplorasi perdebatan abadi antara penggunaan spasi dan tab untuk indentasi kode, dan mengapa pilihan ini lebih penting dari yang Anda kira."
+title: "Desain Ulang Situs Web Flowerbar menggunakan GoDaddy" 
+publishedAt: "2024-10-30"
+summary: "FlowerBar adalah toko online yang menyediakan berbagai pilihan rangkaian bunga segar untuk berbagai acara spesial. Dengan berbagai desain dan layanan pemesanan mudah melalui WhatsApp, kami hadir untuk membuat momen Anda lebih berkesan."
 images:
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/image-03.jpg"
+  - "/images/projects/flower/flower (1).png"
+  - "/images/projects/flower/flower (2).png"
+  - "/images/projects/flower/flower (3).png"
 team:
-  - name: "John Doe"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+  - name: "PPanky Bintang Pradana Yosua"
+    role: "Project Manager"
+    avatar: "/images/projects/project-01/avatar-01.png"
+    linkedIn: "#"
+  - name: "Rifqi AlRasid"
+    role: "Developer"
+    avatar: "/images/projects/project-01/avatar-01.png"
+    linkedIn: "#"
 ---
 
-## Ikhtisar
+## Overview
 
-Dalam proyek ini, saya berfokus pada otomatisasi proses penyerahan desain yang sering memakan waktu. Tujuannya adalah untuk membuat pipeline yang mengubah desain Figma langsung menjadi kode yang bersih dan siap produksi. Dengan mengintegrasikan token desain, perpustakaan komponen, dan alur kerja otomatis, solusi ini secara signifikan mengurangi waktu yang dihabiskan untuk menerjemahkan aset desain menjadi kode, sambil menjaga konsistensi desain di seluruh produk.
+FlowerBar adalah toko online yang mengkhususkan diri dalam menjual rangkaian bunga segar dan cantik, yang dirancang untuk berbagai momen spesial, mulai dari ulang tahun, pernikahan, hingga perayaan lainnya. Kami memahami bahwa bunga adalah cara khusus untuk mengekspresikan perasaan kita, dan kami berkomitmen untuk menyediakan rangkaian bunga yang unik dan elegan. Situs web kami menggunakan platform GoDaddy untuk menampilkan katalog produk kami dan memberikan pengalaman berbelanja yang lancar. Pemesanan dilakukan dengan mudah melalui WhatsApp, sehingga pelanggan dapat berkomunikasi secara langsung, menanyakan ketersediaan, dan mempersonalisasi karangan bunga mereka.
 
 ## Fitur Utama
 
-- **Integrasi Plugin Figma**: Mengembangkan plugin Figma khusus yang mengekstrak token desain seperti warna, tipografi, dan nilai jarak, lalu mengekspornya dalam format yang kompatibel dengan basis kode kami.
-- **Pembuatan Kode**: Mengintegrasikan proses otomatis yang menerjemahkan komponen Figma menjadi kode React menggunakan kombinasi token desain dan template komponen yang sudah dibangun. Ini memungkinkan pengembang untuk lebih fokus pada logika dan mengurangi pengkodean UI yang repetitif.
-- **Sinkronisasi Berkelanjutan**: Membuat pipeline CI/CD yang terus menerus menyinkronkan perubahan desain dari Figma ke basis kode, memastikan pembaruan desain tercermin secara instan tanpa intervensi manual.
-- **Sistem Desain yang Skalabel**: Memanfaatkan sistem desain yang tetap menjadi sumber kebenaran tunggal bagi desainer dan pengembang, memudahkan dalam menjaga konsistensi meskipun produk terus berkembang.
+- **Katalog Produk Menarik**: Koleksi karangan bunga cantik lengkap dengan foto dan deskripsi produk berkualitas tinggi. Setiap koleksi disusun berdasarkan tema, seperti karangan bunga romantis, karangan bunga perayaan, dan karangan bunga ulang tahun.
+- **Pesan melalui WhatsApp**: Proses pemesanan yang mudah dan cepat. Pelanggan dapat memilih karangan bunga yang diinginkan, menghubungi kami langsung melalui WhatsApp, dan langsung memesan. Fitur ini memberikan fleksibilitas untuk mendiskusikan preferensi warna, jenis bunga, atau menambahkan pesan pribadi.
+- **Personalisasi Karangan Bunga**: Menyediakan opsi untuk menambahkan pesan pribadi, pita khusus, atau aksesori lain seperti vas dan kartu ucapan.
+- **Testimoni Pelanggan**: Menampilkan ulasan dari pelanggan kami untuk memberikan gambaran kepada calon pelanggan tentang kualitas dan layanan kami.
+- **Flower Inspiration Blog**: Blog dengan konten inspiratif tentang bunga, tips perawatan, dan ide kreatif untuk memilih buket yang tepat untuk berbagai acara.
 
 ## Teknologi yang Digunakan
 
-- **Figma API**: Untuk mengekstrak token desain dan data komponen langsung dari desain Figma.
-- **React dan Next.js**: Untuk membangun basis kode front-end dengan komponen yang bersih dan dapat digunakan kembali.
-- **Styled-Components**: Untuk mengelola gaya secara dinamis menggunakan token desain.
-- **GitHub Actions**: Untuk mengotomatisasi pipeline dan menyinkronkan perubahan desain ke repositori.
+- **GoDaddy**: Sebagai platform utama untuk desain dan pengelolaan situs web, menyediakan tampilan yang responsif dan mudah dikelola.
+- **WhatsApp**: Metode utama untuk memesan dan berkomunikasi dengan pelanggan, memungkinkan personalisasi yang mudah dan mempercepat proses pemesanan.
 
 ## Tantangan dan Pembelajaran
 
-Salah satu tantangan terbesar adalah memastikan bahwa kode yang dihasilkan bersih dan mudah dikelola. Ini melibatkan pengaturan pemetaan cerdas antara komponen Figma dan struktur kode React, serta menangani kasus-kasus tepi seperti desain responsif dan rendering bersyarat. Selain itu, sinkronisasi berkelanjutan memerlukan sistem penanganan kesalahan yang kuat untuk mencegah konflik selama pengembangan.
+Mengelola katalog produk dan menyediakan proses pemesanan yang fleksibel melalui WhatsApp merupakan tantangan tersendiri, terutama dalam hal memastikan pengalaman yang responsif dan personal bagi setiap pelanggan. Implementasi ini juga memberikan banyak pelajaran dalam meningkatkan layanan pelanggan dan menyediakan pengalaman pemesanan yang efisien.
 
 ## Hasil
 
-Pipeline otomatis Figma ke kode telah merampingkan proses penyerahan, mengurangi waktu desain-ke-pengembangan sebesar 40%. Desainer kini lebih percaya diri bahwa desain mereka akan diterjemahkan dengan akurat ke dalam kode, dan pengembang dapat fokus pada logika yang lebih kompleks serta pengembangan fitur. Proyek ini telah membuktikan nilai otomasi dalam menjembatani kesenjangan antara desain dan pengembangan.
-
----
-
-Proyek ini menunjukkan kemampuan Anda dalam memanfaatkan otomasi dan merampingkan alur kerja, yang sangat relevan untuk portofolio teknik desain yang berfokus pada efisiensi dan inovasi.
+FlowerBar kini memiliki platform yang mudah diakses dan menarik, dengan metode pemesanan WhatsApp yang memungkinkan pelanggan melakukan pembelian dengan cepat dan fleksibel. Kami telah berhasil menyediakan layanan buket bunga yang menyenangkan dan memudahkan pelanggan untuk menjadikan setiap momen istimewa dengan bunga segar dan personalisasi yang unik.
