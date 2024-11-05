@@ -246,6 +246,46 @@ const gallery = {
     description: 'Galeri visual dari implementasi sukses kami',
     images: [
         { 
+            src: '/images/projects/flower/flower (1).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/flower/flower (2).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/flower/flower (3).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (1).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (2).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (3).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (4).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/projects/speak/speak (5).png', 
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        { 
             src: '/images/queasy/queasy (1).png', 
             alt: 'image',
             orientation: 'horizontal'
